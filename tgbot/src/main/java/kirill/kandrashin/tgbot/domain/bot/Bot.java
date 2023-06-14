@@ -233,6 +233,8 @@ public class Bot extends TelegramLongPollingBot {
         response(responses);
     }
 
+
+
     @Scheduled(cron = "${bot.cron.dblistener.deadline}")
     private void listenerDeadline(){
         List<Response> responses = new ArrayList<>();

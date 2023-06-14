@@ -34,15 +34,6 @@ public class WorkerInteraction {
             String message = update.getMessage().getText();
 
               switch (message) {
-                  case "фишка":
-                      responses.add(new Response(chatId, "Вам добавлена задача #6" + " " + "Подготовить презентацию нового функционала модуля \"ЛК\"" + "\n" +
-                              "Статус: " + "Ожидание" + "\n" +
-                              "Дедлайн: " + "01.06.2023" + "\n" +
-                              "План выполнения: " + 6 + "часов", "empty"));
-                      break;
-                  case "фишка2":
-                      responses.add(new Response(chatId, "Отчет за 10.05.2023. Итого часов: " + 8.1, "empty"));
-                      break;
                     case "/start":
                     case "Старт":
                         if (employeeService.findEmployeeByChatId(chatId).getChatId() == null) {

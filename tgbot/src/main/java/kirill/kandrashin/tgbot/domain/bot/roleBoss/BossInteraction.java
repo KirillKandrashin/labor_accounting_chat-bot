@@ -36,19 +36,6 @@ public class BossInteraction {
             Long chatId = update.getMessage().getChatId();
             Employee employee;
             switch (message){
-                case "фишка":
-                    responses.add(new Response(chatId, "Через 2 недели срок сдачи проекта #" + 4 + " " + "Госконтракт 18" + "\n" +
-                            "Дедлайн: " + "25.05.2023" + "\n" +
-                            "Завершенность: " + 70 + "%", "empty"));
-                    break;
-                case "фишка2":
-                    responses.add(new Response(chatId, "Сотрудник: Петр Петров просрочил задачу #9 Разработка плана реализации подсистемы Форватор" , "empty"));
-                    break;
-                case "фишка3":
-                    responses.add(new Response(chatId, "Предоставить пользователю доступ к боту?" + "\n" +
-                            "ФИО: " + "Кирилл Кандрашин" + "\n" +
-                            "Почта: " + "kirill.kandrashin@mail.ru", "confirming"));
-                    break;
                 case "/start":
                 case "Старт":
                     responses.add(bossCommands.start(chatId));
